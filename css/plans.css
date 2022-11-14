@@ -1,0 +1,76 @@
+body {
+    background: #2b2b2b;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 100px auto;
+}
+.plans-form {
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.plans-form__input {
+    width: 100%;
+    outline: none;
+    background: transparent;
+    border: 1px solid #cf9f23;
+    color: #cf9f23;
+    padding: 12px 8px;
+    border-radius: 4px;
+    transition: 0.3 ease;
+}
+
+.plans-form__input:hover {
+    border: 1px solid #a87d11;
+}
+
+.plans-form__sendButton {
+    background: #cf9f23;
+    border: none;
+    cursor: pointer;
+    padding: 16px 12px;
+    border-radius: 4px;
+}
+
+.plans-form__sendButton:hover {
+    background: #a87d11;
+}
+.plans-list {
+    margin: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.plans-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    padding: 8px 24px;
+}
+
+.plans-list-item:nth-child(odd) {
+    background: #1bc7d6;
+}
+
+.plans-list-item:nth-child(even) {
+    background: #23de54;
+}
+
+.plans-list-item__deleteButton {
+    transition: 0.3 ease;
+    background: #e60d0d;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.plans-list-item__deleteButton:hover {
+    background: #770404;
+}

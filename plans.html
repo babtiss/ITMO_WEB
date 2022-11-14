@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Сухов Владимир" />
+        <meta name="keywords" content="Портфолио, Сайт-Портфолио" />
+        <meta
+            name="description"
+            content="Сайт Портфолио Сухов Владимир M33051"
+        />
+        <script src="./js/loadTime.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/plans.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+        <title>Resume</title>
+    </head>
+    <body>
+        <header class="section header" id="home">
+            <div class="header__top top">
+                <div class="top__inner">
+                    <a class="logo" href="#">
+                        <div class="logo__img-box"></div>
+                        <span class="logo__text"> <b><span id="loadTime"></span></b></span>
+                    </a>
+                    <nav class="navbar">
+                        <ul class="header__nav">
+                            <li class="header__nav-item">
+                                <a
+                                    href="index.html"
+                                    class="header__nav-link"
+                                >
+                                    <b>Home</b>
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="utils.html" class="header__nav-link">
+                                    <b>Utils</b>
+                                </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="plans.html" class="header__nav-link">
+                                    <b>Plans</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <h2 class="plans__header">Suggest Your Idea to help us</h2>
+            <form class="plans-form">
+                <input type="text" class="plans-form__input" />
+                <button class="plans-form__sendButton">Suggest</button>
+            </form>
+            <div class="plans-list"></div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <ul class="footer__nav">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="utils.html"
+                                    >Utils</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__contact">
+                        <p class="footer__item-name footer__communication">
+                            Contact
+                        </p>
+                        <p class="footer__mail">
+                            Email:
+                            <span>
+                                <a href="mailto:cat@gmail.com">
+                                    cat@gmail.com
+                                </a>
+                            </span>
+                        </p>
+                        <p class="footer__inst">
+                           Google:
+                           <p>
+                            https://google.com/?query=cool-cat
+                           </p>
+                        </p>
+                    </div>
+                    <div class="footer__item footer__logo">
+                        <div class="footer__logo-wrapper">
+                            <a class="logo" href="#">
+                                <div class="logo__img-box"></div>
+                                <span class="logo__text">Sukhov</span>
+                            </a>
+                        </div>
+                        <p class="footer__copy">Copyright © 2022, Sukhov</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/activeMenuItem.js"></script>
+        <script src="./js/plansControl.js"></script>
+    </body>
+</html>

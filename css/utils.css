@@ -1,0 +1,33 @@
+body {
+    background: #2b2b2b;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 100px auto;
+}
+
+.utils__header {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.utils__code {
+    color: #ffffff;
+    border: 1px solid #c7c7c7;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.utils__table {
+    width: 100%;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .utils__table {
+        display: none;
+    }
+}

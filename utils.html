@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Сухов Владимир" />
+        <meta name="keywords" content="Портфолио, Сайт-Портфолио" />
+        <script src="./js/loadTime.js"></script>
+        <meta
+            name="description"
+            content="Сайт Портфолио Сухов Владимир M33051"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/utils.css" />
+        <title>Utils</title>
+    </head>
+    <body>
+        <div class="header__top top">
+            <div class="top__inner">
+                <a class="logo" href="#">
+                    <div class="logo__img-box"></div>
+                    <span class="logo__text"> <b><span id="loadTime"></span></b></span>
+                </a>
+                <nav class="navbar">
+                    <ul class="header__nav">
+                        <li class="header__nav-item">
+                            <a
+                                href="index.html"
+                                class="header__nav-link header__nav-link--active"
+                            >
+                                <b>Home</b>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="utils.html" class="header__nav-link">
+                                <b>Utils</b>
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="plans.html" class="header__nav-link">
+                                <b>Plans</b>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <main class="container utils">
+            <h1 class="utils__header">My code for task 4!</h1>
+            <pre class="utils__code">
+(() => {
+    const startTime = Date.now();
+    window.addEventListener("load", () => {
+        const endTime = Date.now();
+        document.getElementById("loadTime").innerText = `${
+            endTime - startTime
+        } ms`;
+    });
+})();
+            </pre>
+            <table class="utils__table" border="1">
+                <caption>
+                    Таблица размеров обуви
+                </caption>
+                <tr>
+                    <th>Россия</th>
+                    <th>Великобритания</th>
+                    <th>Европа</th>
+                    <th>Длина ступни, см</th>
+                </tr>
+                <tr>
+                    <td>34,5</td>
+                    <td>3,5</td>
+                    <td>36</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>35,5</td>
+                    <td>4</td>
+                    <td>36⅔</td>
+                    <td>23–23,5</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>4,5</td>
+                    <td>37⅓</td>
+                    <td>23,5</td>
+                </tr>
+                <tr>
+                    <td>36,5</td>
+                    <td>5</td>
+                    <td>38</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>5,5</td>
+                    <td>38⅔</td>
+                    <td>24,5</td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>6</td>
+                    <td>39⅓</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>38,5</td>
+                    <td>6,5</td>
+                    <td>40</td>
+                    <td>25,5</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>7</td>
+                    <td>40⅔</td>
+                    <td>25,5–26</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>7,5</td>
+                    <td>41⅓</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>40,5</td>
+                    <td>8</td>
+                    <td>42</td>
+                    <td>26,5</td>
+                </tr>
+                <tr>
+                    <td>41</td>
+                    <td>8,5</td>
+                    <td>42⅔</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>9</td>
+                    <td>43⅓</td>
+                    <td>27,5</td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>9,5</td>
+                    <td>44</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>43,5</td>
+                    <td>10</td>
+                    <td>44⅔</td>
+                    <td>28–28,5</td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>10,5</td>
+                    <td>45⅓</td>
+                    <td>28,5–29</td>
+                </tr>
+                <tr>
+                    <td>44,5</td>
+                    <td>11</td>
+                    <td>46</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>11,5</td>
+                    <td>46⅔</td>
+                    <td>29,5</td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>12</td>
+                    <td>47⅓</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>46,5</td>
+                    <td>12,5</td>
+                    <td>48</td>
+                    <td>30,5</td>
+                </tr>
+                <tr>
+                    <td>47</td>
+                    <td>13</td>
+                    <td>48⅔</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>13,5</td>
+                    <td>49⅓</td>
+                    <td>31,5</td>
+                </tr>
+            </table>
+        </main>
+        <footer class="footer">
+            <div class="container" style="margin: 0 auto;">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <ul class="footer__nav">
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="footer__nav-item">
+                                <a class="footer__nav-link" href="utils.html"
+                                    >Utils</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__contact">
+                        <p class="footer__item-name footer__communication">
+                            Contact
+                        </p>
+                        <p class="footer__mail">
+                            Email:
+                            <span>
+                                <a href="mailto:cat@gmail.com">
+                                    cat@gmail.com
+                                </a>
+                            </span>
+                        </p>
+                        <p class="footer__inst">
+                           Google:
+                           <p>
+                            https://google.com/?query=cool-cat
+                           </p>
+                        </p>
+                    </div>
+                    <div class="footer__item footer__logo">
+                        <div class="footer__logo-wrapper">
+                            <a class="logo" href="#">
+                                <div class="logo__img-box"></div>
+                                <span class="logo__text">Sukhov</span>
+                            </a>
+                        </div>
+                        <p class="footer__copy">Copyright © 2022, Sukhov</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/activeMenuItem.js"></script>
+    </body>
+</html>
