@@ -13,6 +13,7 @@
         <script src="./js/loadTime.js"></script>
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/plans.css" />
+        <link rel="stylesheet" href="css/loader.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -59,6 +60,11 @@
                 <button class="plans-form__sendButton">Suggest</button>
             </form>
             <div class="plans-list"></div>
+
+            <div class="loader" style="display: none; margin: 24px auto; text-align: center"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+            <div class="error" style="display: none;">FATAL OSHIBKA</div>
+            <div class="users-list"></div>
+            <div class="users-list-pagination"></div>
         </main>
 
         <footer class="footer">
@@ -111,5 +117,6 @@
         </footer>
         <script src="./js/activeMenuItem.js"></script>
         <script src="./js/plansControl.js"></script>
+        <script src="./js/getUsers.js"></script>
     </body>
 </html>

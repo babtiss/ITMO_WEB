@@ -12,9 +12,14 @@
         />
         <script src="./js/loadTime.js"></script>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/swiper.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         />
         <title>Resume</title>
     </head>
@@ -183,6 +188,39 @@
                     </div>
                 </div>
             </div>
+            <h2 style="text-align: center; margin: 48px 0 24px 0;">My Portfolio</h2>
+
+            <div class="swiper">
+                <!-- Инициализируем controls для управления слайдеров -->
+                <div class="swiper-controls">
+                    <div class="swiper-prevSlide swiper-control">
+                        <img
+                            src="./images/cat.svg"
+                            alt="arrow left"
+                        />
+                    </div>
+                    <div class="swiper-nextSlide swiper-control">
+                        <img
+                            src="./images/cat.svg"
+                            alt="arrow right"
+                        />
+                    </div>
+                </div>
+                <!-- Инициализируем wrapper где будет хранится слайды слайдера -->
+                <div class="swiper-wrapper">
+                    <!-- Наши слайды -->
+                    <div class="swiper-slide" style="background: purple">
+                        <h3>KTO NE KOT TO DOG</h3>
+                    </div>
+                    <div class="swiper-slide" style="background: red">
+                        <h3>YA NE HLEB YA KOT</h3>
+                    </div>
+                    <div class="swiper-slide" style="background: green">
+                        <h3>JOPA KITA</h3>
+                        
+                    </div>
+                </div>
+            </div>
         </main>
 
         <section class="section contact" id="contact">
@@ -257,5 +295,8 @@
             </div>
         </footer>
         <script src="./js/activeMenuItem.js"></script>
+        <!-- Подключаем swiper cdn к странице -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/swiper.js"></script>
     </body>
 </html>

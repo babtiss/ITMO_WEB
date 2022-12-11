@@ -13,7 +13,10 @@
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/utils.css" />
+        <link rel="stylesheet" href="css/masonry.css" />
         <title>Utils</title>
+        <!-- Подключаем скрипт mansory на страницу -->
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     </head>
     <body>
         <div class="header__top top">
@@ -196,6 +199,33 @@
                     <td>31,5</td>
                 </tr>
             </table>
+            <!-- Инициализируем layout с itemSelector с классом наших итемов  и устанавливаем ширину колонок 160px -->
+            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 160 }'>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--width2 grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height3"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--width3"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--width2 grid-item--height3"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--width2 grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--width2"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height3"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height2"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item"/>
+                <img src="./images/cat.svg" class="grid-item grid-item--height2"/>
+              </div>
+
         </main>
         <footer class="footer">
             <div class="container" style="margin: 0 auto;">
